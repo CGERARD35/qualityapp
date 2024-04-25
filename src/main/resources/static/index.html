@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion des Clients</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<h1>Gestion des Clients</h1>
+<div id="clientForm">
+    <input type="hidden" id="clientId">
+    <input type="text" id="nom" placeholder="Nom">
+    <input type="text" id="prenom" placeholder="Prénom">
+    <input type="date" id="dateNaissance" placeholder="Date de Naissance">
+    <input type="text" id="adresse" placeholder="Adresse">
+    <input type="text" id="codePostal" placeholder="Code Postal">
+    <input type="text" id="ville" placeholder="Ville">
+    <button onclick="saveClient()">Enregistrer</button>
+    <button onclick="updateClient()">Mettre à jour</button>
+</div>
+<button onclick="showClients()">Afficher les Clients</button>
+<div id="clientsList"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
